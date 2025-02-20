@@ -3,7 +3,8 @@
 <html>
   <head>
     <title>Kafui's Blog</title>
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'css/blog.css' %}" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,19 +19,178 @@
     />
   </head>
   <body>
-    <header>
-      <div class="topSection">
-        <h1 class="heading">Kafui's Blog</h1>
-        <p class="subHeading">
-          Welcome to my blog. A forum that discusses everything from waakye
-          recipes to cupcakes and hugs. Enjoy! #NeverGiveUp
-        </p>
-      </div>
-    </header>
-
+    <div class="topSection">
+      <h1>Kafui's Blog</h1>
+      <p class="subHeading">
+        Welcome to my blog. A forum that discusses everything from waakye
+        recipes to cupcakes and hugs. Enjoy! & #NeverGiveUp
+      </p>
+    </div>
     <div class="articles">{% block content %} {% endblock %}</div>
 
-    <!-- Styling -->
-    <style></style>
+    <div>
+      <div class="tutorialSection">
+        <p>
+          This blog is powered by Python's Django framework. I followed the
+          <a href="https://tutorial.djangogirls.org" target="_blank"
+            >Django Girls Tutorial</a
+          >
+          to build it. You can too. I wish you all the best in your programming
+          journey!
+        </p>
+      </div>
+      <div class="tutorialCards">
+        <div class="tutorial">
+          <img
+            class="tutorialImage"
+            src="{% static 'images/django_girls_tutorial.jpg' %}"
+            alt="Django Girls tutorial"
+          />
+          <a href="https://tutorial.djangogirls.org" class="tutorialTitle"
+            >Official Django Girls tutorial</a
+          >
+          <p class="description">Regularly updated</p>
+        </div>
+        <div class="tutorial">
+          <img
+            class="tutorialImage"
+            src="{% static 'images/django_girls_tutorial.jpg' %}"
+            alt="YouTube tutorial"
+          />
+          <a
+            href="https://www.youtube.com/playlist?list=PLCVY0B6uq3etSa5iVf4xXprUQ2DaEl9LS"
+            class="tutorialTitle"
+            >YouTube tutorial by CodeParse</a
+          >
+          <p class="description">Last updated more than 7 years ago</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- styling -->
+    <style>
+      html {
+        background: #f0eee6;
+      }
+
+      body {
+        background-color: #f0eee6;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+      }
+
+      .subHeading {
+        font-size: 16px;
+      }
+
+      .topSection {
+        margin: 16px 0 32px 0;
+        border-bottom: 2px solid #00000010;
+        padding: 0 0 16px 0;
+      }
+
+      .heading {
+        font-size: 64px;
+        padding-bottom: 12px;
+      }
+
+      h1 a,
+      h1 {
+        color: #081875;
+        font-family: "Ojuju", serif;
+        font-weight: 800;
+      }
+
+      a {
+        color: #081875;
+      }
+
+      h2 a,
+      h2 {
+        color: #000000;
+        font-family: serif;
+        text-decoration: none;
+      }
+
+      h2 a:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        color: #000000;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+
+      .articles {
+        padding: 0 0 32px 0;
+        border-bottom: 2px solid #00000010;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+      }
+
+      .pubtime {
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+
+      time {
+        margin: 4px 0;
+        padding: 4px 8px;
+        background: #f5f5f5;
+        border-radius: 20px;
+      }
+
+      .tutorialSection {
+        padding-top: 32px;
+      }
+
+      .tutorialCards {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+      }
+
+      .tutorial {
+        display: flex;
+        flex-direction: column;
+      }
+      .tutorialTitle {
+        font-weight: 800;
+        color: #081875;
+      }
+
+      .tutorialImage {
+        max-width: 100%;
+        border-radius: 16px;
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 48px;
+        }
+
+        body {
+          width: calc(100% - 32px);
+        }
+
+        .tutorialCards {
+          display: block;
+        }
+      }
+
+      @media (min-width: 1440px) {
+        h1 {
+          font-size: 72px;
+        }
+        body {
+          max-width: 900px;
+        }
+      }
+    </style>
   </body>
 </html>
