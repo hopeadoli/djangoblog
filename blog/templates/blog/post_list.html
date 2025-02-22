@@ -3,16 +3,4 @@
   <time>{{ post.published_date }}</time>
   <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 </article>
-
-<style>
-  time {
-    margin: 4px 0;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #818181;
-  }
-</style>
-
 {% endfor %} {% endblock %}

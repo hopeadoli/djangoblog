@@ -2,26 +2,21 @@ html {
   background: #f0eee6;
 }
 
-.tutorialSection {
-  display: flex;
-  gap: 20px;
-  margin: 32px 0;
-}
-
-.tutorial {
+body {
+  background-color: #f0eee6;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
 }
-.tutorialTitle {
-  font-weight: 800;
-  color: #081875;
-}
+
 .subHeading {
   font-size: 16px;
 }
+
 .topSection {
   margin: 16px 0 32px 0;
-  border-bottom: 2px solid #00000020;
+  border-bottom: 2px solid #00000010;
   padding: 0 0 16px 0;
 }
 
@@ -59,50 +54,56 @@ p {
 }
 
 .articles {
+  padding: 0 0 32px 0;
+  border-bottom: 2px solid #00000010;
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.tutorialImage {
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-}
-.pubtime {
-  margin-top: 8px;
-  margin-bottom: 8px;
+.tutorialSection {
+  padding-top: 32px;
 }
 
-time {
-  margin: 4px 0;
-  padding: 4px 8px;
-  background: #f5f5f5;
-  border-radius: 20px;
+.tutorialCards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
 }
 
-body {
-  background-color: #f0eee6;
+.tutorial {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 32px;
-  margin: 0 auto;
+}
+.tutorialTitle {
+  font-weight: 800;
+  color: #081875;
+}
+
+.tutorialImage {
+  max-width: 100%;
+  border-radius: 16px;
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+
   body {
     width: calc(100% - 32px);
   }
 
-  .tutorialSection {
-    flex-wrap: wrap;
+  .tutorialCards {
+    display: block;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 769px) {
+  h1 {
+    font-size: 72px;
+  }
   body {
     max-width: 900px;
-    height: 100%;
   }
 }
