@@ -22,6 +22,21 @@ class Post(models.Model):
     def __str__(self):
         return self.title
     
+    def save_multiple_formats(image_file, output_base_name):
+        img = Image.open(image_file)
+
+        # Save as JPEG
+        output_jpeg = BytesIO()
+        img.save(output_jpeg, format='JPEG', quality=85)
+        with open(f"{output_base_name}.jpg", "wb") as f:
+            f.write(output_jpeg.getvalue())
+
+        # Save as PNG
+        output_png = BytesIO()
+        img.save(output_png, format='PNG')
+        with open(f"{output_base_name}.png", "wb") as f:
+            f.write(output_png.getvalue())
+    
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)  # Save the model first
 
