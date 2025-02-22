@@ -3,6 +3,18 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="description"
+      content="{{ post.text|striptags|truncatewords:30 }}"
+    />
+    <meta name="author" content="Kafui" />
+    <meta property="og:image" content="{{ post.featured_image.url }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ post.title }}</title>
     <link rel="stylesheet" href="{% static 'css/post_detail.css' %}" />
@@ -10,7 +22,12 @@
 
   <body>
     <header>
-      <a href="/">Go back home</a>
+      <div class="homeLogo">
+        <h1 class="home">
+          <a href="/">Kafui's Blog</a>
+        </h1>
+        <div class="bar"></div>
+      </div>
     </header>
     <div>
       <article class="post">
