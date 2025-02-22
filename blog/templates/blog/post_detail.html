@@ -18,6 +18,13 @@
         <time class="date"> {{ post.published_date }} </time>
         {% endif %}
         <h1>{{ post.title }}</h1>
+        {% if post.featured_image %}
+        <img
+          src="{{ post.featured_image.url }}"
+          alt="{{ post.title }}"
+          class="featured-image"
+        />
+        {% endif %}
         <p>{{ post.text|linebreaksbr }}</p>
       </article>
       <div class="share-container">

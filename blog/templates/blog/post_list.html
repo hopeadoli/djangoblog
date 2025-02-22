@@ -1,6 +1,19 @@
 {% extends 'blog/base.html' %} {% block content %} {% for post in posts %}
+
 <article>
-  <time>{{ post.published_date }}</time>
-  <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+  <div class="postContent">
+    {% if post.featured_image %}
+    <img
+      src="{{ post.featured_image.url }}"
+      alt="{{ post.title }}"
+      class="featured-image"
+    />
+    {% endif %}
+    <div>
+      <time>{{ post.published_date }}</time>
+      <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+    </div>
+  </div>
 </article>
+
 {% endfor %} {% endblock %}
