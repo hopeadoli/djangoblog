@@ -11,16 +11,12 @@ html {
 .home a {
   position: fixed;
   top: 0;
-  left: 0;
   font-size: 24px;
-  padding: 16px;
   font-family: "Ojuju", serif;
   background: #f0eee6;
   border-bottom: #00000008 solid 1px;
   font-weight: 800;
   text-decoration: none;
-  width: 100%;
-  height: max-content;
 }
 
 .bar::after {
@@ -91,5 +87,18 @@ article p {
 @media (max-width: 768px) {
   body {
     width: calc(100% - 32px);
+  }
+
+  .home a {
+    width: 100%;
+    padding: 16px;
+    left: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  .home a {
+    padding: 16px 0;
+    width: 60%;
   }
 }
