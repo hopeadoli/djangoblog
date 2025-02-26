@@ -25,4 +25,4 @@ If you want to add blog posts, you will need to create a superuser. Use `python 
 ### 4. Run server
 Use `python manage.py runserver` to activate your server. It typically would be on 127.0.0.1:8000.
 
-That's it! You can edit the code to your taste. If you use follow this approach and run into an issue, please contact me on X/Twitter: @kafuiadoli or on LinkedIn Hope Adoli. Cheers.
+That's it! You can edit the code to your taste. If you use follow this approach and run into an issue, please contact me on [X/Twitter:](https://x.com/kafuiadoli) or on LinkedIn [Hope Adoli](https://linkedin.com/in/hopeadoli). Cheers.
