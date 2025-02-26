@@ -69,6 +69,3 @@ python manage.py runserver
 It typically would be on `http://127.0.0.1:8000`. So open your web browser and go to `http://127.0.0.1:8000/`.To stop the server you already know to press `Ctrl+C`. 
 
 That's it! You can edit the code to your taste. If you use follow this approach and run into an issue, please contact me on X/Twitter [@kafuiadoli](https://x.com/kafuiadoli) or on LinkedIn [Hope Adoli](https://linkedin.com/in/hopeadoli).
-
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for more information.
