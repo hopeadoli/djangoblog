@@ -1,13 +1,16 @@
 # Kafui's Blog
+
 This Blog was built using Django, by following the [DjangoGirls tutorial](https://tutorial.djangogirls.org). There are a few lines of Javascript in there as well. Overall, it should be pretty easy to clone and run locally.
 
 ## Prerequisites
+
 Before you begin, ensure you have met the following requirements:
 - You have installed Python 3.6 or later.
 - You have installed `pip`, the Python package installer.
 - You have installed `virtualenv` to create virtual environments.
 
 ## How to get it running locally
+
 This guide is for beginners, if you a pro, you might want to skip this :)
 
 **1. Clone the repo**
@@ -17,6 +20,7 @@ git clone https://github.com/hopeadoli/djangoblog.git
 ```
 
 **2. Create virtual environment**
+
 Incase you forgot to, please activate a venv. I'm calling it myvenv. You can name it whatever you want.
 
 For Windows
