@@ -5,7 +5,7 @@ This Blog was built using Django, by following the [DjangoGirls tutorial](https:
 This guide is for beginners, if you a pro, you might want to skip this :)
 
 ### 1. Clone the repo 👇
-Use `git clone https://github.com/hopeadoli/djgirls.git` to clone the repo.
+Use `git clone https://github.com/hopeadoli/djangoblog.git` to clone the repo.
 
 ### 2. Activate virtual environment
 Incase you forgot to, please activate a venv. I'm calling mine myvenv. But you can name it however you like.
