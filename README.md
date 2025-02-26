@@ -30,7 +30,7 @@ python -m venv myvenv
 
 **3. Activate the virtual environment**
 
-On Windows:
+On Windows
 ```bash
 myvenv\Scripts\activate
 ```
