@@ -14,6 +14,7 @@ Before you begin, ensure you have met the following requirements:
 This guide is for beginners, if you a pro, you might want to skip this :)
 
 **1. Clone the repo**
+
 Use the following command to clone the repo.
 ```bash 
 git clone https://github.com/hopeadoli/djangoblog.git
