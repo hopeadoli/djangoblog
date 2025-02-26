@@ -24,12 +24,6 @@ git clone https://github.com/hopeadoli/djangoblog.git
 
 Incase you forgot to, please activate a venv. I'm calling it myvenv. You can name it whatever you want.
 
-For Windows
-```bash
-python -m venv myvenv
-```
-
-For MacOS and Linux
 ```bash 
 python -m venv myvenv
 ```
