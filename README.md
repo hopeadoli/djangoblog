@@ -22,7 +22,7 @@ git clone https://github.com/hopeadoli/djangoblog.git
 
 **2. Create virtual environment**
 
-Incase you forgot to, please activate a venv. I'm calling it myvenv. You can name it whatever you want.
+Incase you forgot to, please activate a venv. I'm calling it `myvenv`. You can name it whatever you want.
 
 ```bash 
 python -m venv myvenv
