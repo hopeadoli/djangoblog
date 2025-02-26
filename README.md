@@ -2,6 +2,7 @@
 This Blog was built using Django, by following the [DjangoGirls tutorial](https://tutorial.djangogirls.org). There are a few lines of Javascript in there as well. Overall, it should be pretty easy to clone and run locally.
 
 ## Prerequisites
+
 Before you begin, ensure you have met the following requirements:
 - You have installed Python 3.6 or later.
 - You have installed `pip`, the Python package installer.
@@ -11,12 +12,14 @@ Before you begin, ensure you have met the following requirements:
 This guide is for beginners, if you a pro, you might want to skip this :)
 
 **1. Clone the repo**
+
 Use the following command to clone the repo.
 ```bash 
 git clone https://github.com/hopeadoli/djangoblog.git
 ```
 
 **2. Create virtual environment**
+
 Incase you forgot to, please activate a venv. I'm calling it myvenv. You can name it whatever you want.
 
 For Windows
