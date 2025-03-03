@@ -99,6 +99,6 @@ article p {
 @media (min-width: 769px) {
   .home a {
     padding: 16px 0;
-    width: 60%;
+    width: 900px;
   }
 }
