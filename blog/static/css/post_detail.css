@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin: 40px auto;
-  width: 60%;
+  width: 900px;
 }
 
 .post {

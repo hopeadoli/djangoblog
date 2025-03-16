@@ -69,12 +69,21 @@
           const url = window.location.href;
           navigator.clipboard.writeText(url).then(
             function () {
-              document.getElementById("share-icon").style.display = "none";
-              document.getElementById("check-icon").style.display = "inline";
+              // Change the text and icons
+              const shareButton = document.getElementById("share-button");
+              const shareIcon = document.getElementById("share-icon");
+              const checkIcon = document.getElementById("check-icon");
+
+              shareIcon.style.display = "none";
+              checkIcon.style.display = "inline";
+              shareButton.textContent = "Copied!";
+
+              // Revert back after 3 seconds
               setTimeout(function () {
-                document.getElementById("share-icon").style.display = "inline";
-                document.getElementById("check-icon").style.display = "none";
-              }, 3000); // Revert back after 3 seconds
+                shareIcon.style.display = "inline";
+                checkIcon.style.display = "none";
+                shareButton.textContent = "Share";
+              }, 3000);
             },
             function (err) {
               console.error("Could not copy text: ", err);
